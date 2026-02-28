@@ -92,6 +92,7 @@ Browse knowledge base entries organized by category and tag.
 | Topic | Language | Pattern | Tags | Updated |
 |-------|----------|---------|------|---------|
 | [SSH Helper Functions](../topics/tooling/ssh-helper-functions.md) | bash | tooling | `ssh`, `clipboard`, `known-hosts` | 2026-02 |
+| [WSL2 SSH Remote Development](../articles/wsl-ssh-remote-development.md) | bash | operational | `ssh`, `wsl`, `cursor`, `vscode`, `remote-development` | 2026-02 |
 | [Git Multi-Email Configuration](../topics/tooling/git-multi-email-config.md) | gitconfig | data | `git`, `config`, `identity` | 2026-02 |
 | [Docker Nginx Development Server](../topics/tooling/docker-nginx-dev-server.md) | bash | operational | `docker`, `nginx`, `ssl` | 2026-02 |
 | [Maintenance Scripts Collection](../topics/tooling/maintenance-scripts.md) | bash | automation | `scripts`, `maint` | 2026-02 |
