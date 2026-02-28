@@ -12,6 +12,7 @@ This repository serves as a searchable, organized collection of technical knowle
 - Tool configurations and workflows
 - Architecture decisions and trade-offs
 - Code snippets and reusable solutions
+- Cursor AI skills and rules for automated workflows
 
 All content has been sanitized to remove sensitive information (proprietary code, internal URLs, credentials, company-specific details).
 
@@ -62,6 +63,20 @@ Browse the **[Patterns Index](./index/patterns.md)** to find development pattern
 | `api` | REST conventions, GraphQL patterns |
 | `testing` | Mocking, Fixtures, Test doubles |
 
+### Cursor AI Skills & Rules
+
+This repo includes Cursor IDE skills — reusable AI workflows that teach the agent how to perform specific tasks.
+
+| Skill | Description |
+|-------|-------------|
+| [tekmonkee-setup](.cursor/skills/tekmonkee-setup/SKILL.md) | Configure Cursor IDE and install standard dev tools on a new machine |
+
+**What are Skills?**
+Skills are markdown files in `.cursor/skills/` that provide instructions, scripts, and reference docs for specific workflows. When you invoke a skill (e.g., `@tekmonkee-setup`), the agent reads and follows the instructions.
+
+**What are Rules?**
+Rules are persistent guidance in `.cursor/rules/` that apply automatically to matching files or contexts. Use them for coding standards, project conventions, or file-specific patterns.
+
 ### By Timeline
 
 Browse the **[Timeline Index](./index/timeline.md)** to see when topics were documented or updated:
@@ -81,6 +96,13 @@ Each entry includes the date added/updated, making it easy to find recent learni
 ```
 tekmonkee/
 ├── README.md                 # This file
+├── .cursor/
+│   ├── skills/               # Cursor AI skills (reusable workflows)
+│   │   └── tekmonkee-setup/  # New machine setup skill
+│   │       ├── SKILL.md
+│   │       ├── install-reference.md
+│   │       └── scripts/
+│   └── rules/                # Cursor rules (persistent guidance)
 ├── index/
 │   ├── topics.md             # Alphabetical topic index with tags
 │   ├── languages.md          # Index by programming language
@@ -141,6 +163,7 @@ category: automation
 - **Domain**: `kubernetes`, `docker`, `aws`, `gcp`, `linux`
 - **Activity**: `debugging`, `deployment`, `migration`, `setup`
 - **Concept**: `networking`, `storage`, `security`, `monitoring`
+- **Tooling**: `cursor`, `vscode`, `git`, `cli`
 
 ### Languages
 
@@ -181,4 +204,4 @@ This is a personal knowledge base generated from private notes. Content is added
 
 ---
 
-*Last updated: 2026-02*
+*Last updated: 2026-02-28*
